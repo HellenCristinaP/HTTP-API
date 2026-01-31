@@ -10,7 +10,7 @@ const KEY = process.env.KEY;
 const app = express();
 
 app.use(cors({
-    origin: 'https://*'
+    origin: 'https://http-tau.vercel.app/'
 }));
 app.use(express.json());
 
