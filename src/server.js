@@ -14,8 +14,8 @@ app.use(cors({
 }));
 app.use(express.json());
 
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}/clientes/${KEY}`);
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`servidor na ${PORT}`)
 });
 
 app.get(`/clientes/${KEY}`, (req, res) => {
